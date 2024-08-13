@@ -64,8 +64,8 @@ def sendEmail(to, content):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login("skzaidu596@gmail.com", "vamf csxy rfdg gojv")
-        server.sendmail('skzaidu596@gmail.com', to, content)
+        server.login("Enter your mail id", "Enter your app Password")
+        server.sendmail('Enter your mail id', to, content)
         server.close()
     except Exception as e:
         speak("Unable to send the email.")
@@ -74,15 +74,15 @@ def sendEmail(to, content):
 
 # Define WhatsApp contacts
 whatsapp_contacts = {
-    'shaikh': '+919511859672',
-    'jarvis': '+919511859672',
+    'name': '+91XXXXXXXXXX',
+    'name': '+91XXXXXXXXXX',
     # Add more WhatsApp contacts as needed
 }
 
 # Define email contacts
 email_contacts = {
-    'shaikh': 'techbot67@gmail.com',
-    'jarvis': 'shaikhhasiburrahman4@gmail.com',
+    'name': 'xyz@gmail.com',
+    'name': 'xyz@gmail.com',
     # Add more email contacts as needed
 }
 
