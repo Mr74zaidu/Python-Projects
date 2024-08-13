@@ -16,8 +16,8 @@ def send_otp(email_id, otp):
     message = f"{otp} is your OTP"
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("skzaidu596@gmail.com", "vamf csxy rfdg gojv")
-    server.sendmail("skzaidu596@gmail.com", email_id, message)
+    server.login("Enter mail id", "Enter your app password")
+    server.sendmail("enter mail id", email_id, message)
     server.quit()
 
 # Function to handle the OTP generation and sending
